@@ -22,8 +22,8 @@ const Index = () => {
           <Card className="overflow-hidden group hover-scale border-none shadow-sm bg-card">
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src="https://cdn.poehali.dev/projects/dabbf16e-ec29-4b47-b728-eeb5bba2dd10/files/ff568074-1b5c-4564-96d7-20c1bf2927ab.jpg"
-                alt="Декоративный стул"
+                src="https://cdn.poehali.dev/files/f72b8c4d-7cde-4fe5-9420-136e1a544b5e.jpeg"
+                alt="Деревянный журнальный столик"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
