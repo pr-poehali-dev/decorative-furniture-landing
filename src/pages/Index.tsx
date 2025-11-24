@@ -12,13 +12,13 @@ const Index = () => {
             backgroundImage: 'url(https://cdn.poehali.dev/files/45feb2f1-fef2-4b58-81c6-36bcaf8f3d30.jpeg)',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-background"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-background"></div>
         </div>
         <div className="container relative z-10 mx-auto px-6 py-20 md:py-32 text-center animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-light tracking-tight text-white mb-6 drop-shadow-lg">
+          <h1 className="text-5xl md:text-7xl font-light tracking-tight text-white mb-6 drop-shadow-2xl" style={{ textShadow: '0 4px 12px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.6)' }}>
             Декоративная мебель
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-light leading-relaxed drop-shadow-md">
+          <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto font-light leading-relaxed" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.6)' }}>
             Уникальные предметы интерьера, созданные с вниманием к деталям и эстетике минимализма
           </p>
         </div>
