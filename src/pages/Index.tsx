@@ -5,13 +5,23 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <section className="container mx-auto px-6 py-20 md:py-32 text-center animate-fade-in">
-        <h1 className="text-5xl md:text-7xl font-light tracking-tight text-foreground mb-6">
-          Декоративная мебель
-        </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed">
-          Уникальные предметы интерьера, созданные с вниманием к деталям и эстетике минимализма
-        </p>
+      <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(https://cdn.poehali.dev/files/45feb2f1-fef2-4b58-81c6-36bcaf8f3d30.jpeg)',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-background"></div>
+        </div>
+        <div className="container relative z-10 mx-auto px-6 py-20 md:py-32 text-center animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-light tracking-tight text-white mb-6 drop-shadow-lg">
+            Декоративная мебель
+          </h1>
+          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-light leading-relaxed drop-shadow-md">
+            Уникальные предметы интерьера, созданные с вниманием к деталям и эстетике минимализма
+          </p>
+        </div>
       </section>
 
       <section className="container mx-auto px-6 py-16">
