@@ -1,12 +1,92 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import Icon from "@/components/ui/icon";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <section className="container mx-auto px-6 py-20 md:py-32 text-center animate-fade-in">
+        <h1 className="text-5xl md:text-7xl font-light tracking-tight text-foreground mb-6">
+          Декоративная мебель
+        </h1>
+        <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed">
+          Уникальные предметы интерьера, созданные с вниманием к деталям и эстетике минимализма
+        </p>
+      </section>
+
+      <section className="container mx-auto px-6 py-16">
+        <h2 className="text-3xl md:text-4xl font-light text-center mb-16 text-foreground">
+          Наши работы
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <Card className="overflow-hidden group hover-scale border-none shadow-sm bg-card">
+            <div className="aspect-[3/4] overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/dabbf16e-ec29-4b47-b728-eeb5bba2dd10/files/ff568074-1b5c-4564-96d7-20c1bf2927ab.jpg"
+                alt="Декоративный стул"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+          </Card>
+
+          <Card className="overflow-hidden group hover-scale border-none shadow-sm bg-card">
+            <div className="aspect-[3/4] overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/dabbf16e-ec29-4b47-b728-eeb5bba2dd10/files/0ef29d3e-a8dc-41a5-868b-1ebc21499969.jpg"
+                alt="Консоль"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+          </Card>
+
+          <Card className="overflow-hidden group hover-scale border-none shadow-sm bg-card">
+            <div className="aspect-[3/4] overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/dabbf16e-ec29-4b47-b728-eeb5bba2dd10/files/53644c38-a7ca-45eb-ae7e-f60b954c292f.jpg"
+                alt="Декоративное зеркало"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+          </Card>
+        </div>
+      </section>
+
+      <section className="container mx-auto px-6 py-20 md:py-32">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-light mb-12 text-foreground">
+            Контакты
+          </h2>
+          <div className="space-y-6">
+            <div className="flex items-center justify-center gap-3 text-lg">
+              <Icon name="Phone" size={24} className="text-muted-foreground" />
+              <a href="tel:+79001234567" className="story-link text-foreground hover:text-primary transition-colors">
+                +7 (900) 123-45-67
+              </a>
+            </div>
+            <div className="flex items-center justify-center gap-3 text-lg">
+              <Icon name="Mail" size={24} className="text-muted-foreground" />
+              <a href="mailto:info@furniture.ru" className="story-link text-foreground hover:text-primary transition-colors">
+                info@furniture.ru
+              </a>
+            </div>
+            <div className="flex items-center justify-center gap-3 text-lg">
+              <Icon name="MapPin" size={24} className="text-muted-foreground" />
+              <span className="text-muted-foreground">Москва, ул. Примерная, 123</span>
+            </div>
+          </div>
+          <div className="mt-12">
+            <Button size="lg" className="px-8 py-6 text-base font-normal">
+              Связаться с нами
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <footer className="border-t border-border py-8">
+        <div className="container mx-auto px-6 text-center text-sm text-muted-foreground">
+          © 2024 Декоративная мебель. Все права защищены.
+        </div>
+      </footer>
     </div>
   );
 };
